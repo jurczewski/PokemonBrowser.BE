@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonBrowser.Application"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonBrowser.Infrastructure", "src\PokemonBrowser.Infrastructure\PokemonBrowser.Infrastructure.csproj", "{DA4D1A92-C045-4434-9C15-55DEDFEDC08C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonBrowser.Core", "PokemonBrowser.Core\PokemonBrowser.Core.csproj", "{9D068C68-9AD1-4338-A7C7-2F224A21B68C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonBrowser.Core", "src\PokemonBrowser.Core\PokemonBrowser.Core.csproj", "{9D068C68-9AD1-4338-A7C7-2F224A21B68C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
