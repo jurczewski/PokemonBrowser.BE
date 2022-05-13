@@ -1,0 +1,5 @@
+@url = https://localhost:5001
+# @url = https://pokemonBrowser.azurewebsites.net
+
+### Check if API responds
+GET {{url}}/ping
