@@ -1,5 +1,6 @@
 using MediatR;
 using PokemonBrowser.Infrastructure.Gateway;
+using PokemonBrowser.Infrastructure.Gateway.Responses;
 
 namespace PokemonBrowser.Application.Queries.GetPokemonByName;
 
@@ -14,12 +15,20 @@ public class GetPokemonByNameHandler : IRequestHandler<GetPokemonByNameQuery, Ge
 
     public async Task<GetPokemonByNameQueryResult> Handle(GetPokemonByNameQuery request, CancellationToken cancellationToken)
     {
-        var pokemonResponse = await _pokeApi.GetPokemon(request.Name);
+        var response = await _pokeApi.GetPokemon(request.Name);
+
+        if (!response.IsSuccessStatusCode)
+        {
+            return new GetPokemonByNameQueryResult();
+        }
+
+        var pokemon = response.Content ?? new PokemonResponse();
+
         return new GetPokemonByNameQueryResult
         {
-            Id = pokemonResponse.Id,
-            Name = pokemonResponse.Species?.Name,
-            FrontImageUrl = pokemonResponse.Sprites?.FrontDefault
+            Id = pokemon.Id,
+            Name = pokemon.Species?.Name,
+            FrontImageUrl = pokemon.Sprites?.FrontDefault
         };
     }
 }
