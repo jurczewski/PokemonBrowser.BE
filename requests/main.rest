@@ -1,5 +1,10 @@
-@url = https://localhost:5001
-# @url = https://pokemonBrowser.azurewebsites.net
+@url = http://localhost:7071/api
+# @url = https://pokemon-browser.azurewebsites.net/api
 
-### Check if API responds
-GET {{url}}/ping
+@name = pikachu
+
+### Get pokemon by name
+GET {{url}}/getByName?name={{name}}
+
+### Get random pokemon
+GET {{url}}/getRandom
