@@ -6,7 +6,7 @@ namespace PokemonBrowser.Application.Queries.GetRandomPokemon;
 public class GetRandomPokemonHandler : IRequestHandler<GetRandomPokemonQuery, GetRandomPokemonQueryResult>
 {
     private readonly IPokeApi _pokeApi;
-    private const int MaxId = 898;
+    private const int MaxId = 899; // 898 is the last pokemon id
 
     public GetRandomPokemonHandler(IPokeApi pokeApi)
     {
@@ -24,7 +24,7 @@ public class GetRandomPokemonHandler : IRequestHandler<GetRandomPokemonQuery, Ge
         {
             Id = pokemonResponse.Id,
             Name = pokemonResponse.Species?.Name,
-            FrontImageUrl = pokemonResponse.Sprites?.front_default
+            FrontImageUrl = pokemonResponse.Sprites?.FrontDefault
         };
     }
 }

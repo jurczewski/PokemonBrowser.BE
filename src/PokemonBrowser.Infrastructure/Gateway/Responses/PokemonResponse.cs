@@ -1,4 +1,4 @@
-using Refit;
+using System.Text.Json.Serialization;
 
 namespace PokemonBrowser.Infrastructure.Gateway.Responses;
 public class PokemonResponse
@@ -10,4 +10,8 @@ public class PokemonResponse
 
 public record Species(string? Name);
 
-public record Sprites([AliasAs("front_default")] string? front_default);
+public class Sprites
+{
+    [JsonPropertyName("front_default")]
+    public string? FrontDefault { get; set; }
+}

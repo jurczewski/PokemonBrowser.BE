@@ -19,7 +19,7 @@ public class GetPokemonByNameHandler : IRequestHandler<GetPokemonByNameQuery, Ge
         {
             Id = pokemonResponse.Id,
             Name = pokemonResponse.Species?.Name,
-            FrontImageUrl = pokemonResponse.Sprites?.front_default
+            FrontImageUrl = pokemonResponse.Sprites?.FrontDefault
         };
     }
 }
