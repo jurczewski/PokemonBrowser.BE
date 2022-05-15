@@ -15,7 +15,7 @@ public class GetPokemonByNameHandler : IRequestHandler<GetPokemonByNameQuery, Ge
 
     public async Task<GetPokemonByNameQueryResult> Handle(GetPokemonByNameQuery request, CancellationToken cancellationToken)
     {
-        var response = await _pokeApi.GetPokemon(request.Name);
+        var response = await _pokeApi.GetPokemon(request.Name.ToLowerInvariant());
 
         if (!response.IsSuccessStatusCode)
         {
