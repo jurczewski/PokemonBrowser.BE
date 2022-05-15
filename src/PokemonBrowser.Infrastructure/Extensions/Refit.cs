@@ -1,8 +1,9 @@
 using Microsoft.Extensions.DependencyInjection;
+using PokemonBrowser.Infrastructure.Framework;
 using PokemonBrowser.Infrastructure.Gateway;
 using Refit;
 
-namespace PokemonBrowser.API.Extensions;
+namespace PokemonBrowser.Infrastructure.Extensions;
 
 public static class Refit
 {
@@ -16,7 +17,8 @@ public static class Refit
             {
                 client.BaseAddress = new Uri(BaseUrl);
                 client.DefaultRequestHeaders.Add("Accept", "application/json");
-            });
+            })
+            .AddPolicyHandler(HttpClientInfrastructure.GetRetryPolicy());
     }
 }
 

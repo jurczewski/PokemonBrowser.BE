@@ -1,7 +1,7 @@
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using PokemonBrowser.API;
-using PokemonBrowser.API.Extensions;
 using PokemonBrowser.Application;
+using PokemonBrowser.Infrastructure.Extensions;
 
 [assembly: FunctionsStartup(typeof(Startup))]
 namespace PokemonBrowser.API;
