@@ -5,11 +5,17 @@ VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonBrowser.API", "src\PokemonBrowser.API\PokemonBrowser.API.csproj", "{FE3C66E6-6BF2-438D-9CAB-55148EA79D45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonBrowser.Application", "src\PokemonBrowser.Application\PokemonBrowser.Application.csproj", "{0A9B4EF1-CB88-419D-BE00-A680E0C03315}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonBrowser.Application", "src\PokemonBrowser.Application\PokemonBrowser.Application.csproj", "{0A9B4EF1-CB88-419D-BE00-A680E0C03315}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonBrowser.Infrastructure", "src\PokemonBrowser.Infrastructure\PokemonBrowser.Infrastructure.csproj", "{DA4D1A92-C045-4434-9C15-55DEDFEDC08C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonBrowser.Infrastructure", "src\PokemonBrowser.Infrastructure\PokemonBrowser.Infrastructure.csproj", "{DA4D1A92-C045-4434-9C15-55DEDFEDC08C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonBrowser.Core", "src\PokemonBrowser.Core\PokemonBrowser.Core.csproj", "{9D068C68-9AD1-4338-A7C7-2F224A21B68C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonBrowser.Core", "src\PokemonBrowser.Core\PokemonBrowser.Core.csproj", "{9D068C68-9AD1-4338-A7C7-2F224A21B68C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{51559768-F1D7-4373-BD29-93050873EEE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonBrowser.UnitTests", "PokemonBrowser.UnitTests\PokemonBrowser.UnitTests.csproj", "{22B79A89-2036-4BA0-A681-0CFE1302851E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ECD9E090-E0F3-4106-9CD5-2D62BBFF7643}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,20 @@ Global
 		{9D068C68-9AD1-4338-A7C7-2F224A21B68C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D068C68-9AD1-4338-A7C7-2F224A21B68C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D068C68-9AD1-4338-A7C7-2F224A21B68C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22B79A89-2036-4BA0-A681-0CFE1302851E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B79A89-2036-4BA0-A681-0CFE1302851E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B79A89-2036-4BA0-A681-0CFE1302851E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B79A89-2036-4BA0-A681-0CFE1302851E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE3C66E6-6BF2-438D-9CAB-55148EA79D45} = {ECD9E090-E0F3-4106-9CD5-2D62BBFF7643}
+		{0A9B4EF1-CB88-419D-BE00-A680E0C03315} = {ECD9E090-E0F3-4106-9CD5-2D62BBFF7643}
+		{DA4D1A92-C045-4434-9C15-55DEDFEDC08C} = {ECD9E090-E0F3-4106-9CD5-2D62BBFF7643}
+		{9D068C68-9AD1-4338-A7C7-2F224A21B68C} = {ECD9E090-E0F3-4106-9CD5-2D62BBFF7643}
+		{22B79A89-2036-4BA0-A681-0CFE1302851E} = {51559768-F1D7-4373-BD29-93050873EEE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {736794B6-2E3D-4E09-B685-92AE204478F0}
