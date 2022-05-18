@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonBrowser.Core", "src\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{51559768-F1D7-4373-BD29-93050873EEE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonBrowser.UnitTests", "PokemonBrowser.UnitTests\PokemonBrowser.UnitTests.csproj", "{22B79A89-2036-4BA0-A681-0CFE1302851E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonBrowser.UnitTests", "tests\PokemonBrowser.UnitTests\PokemonBrowser.UnitTests.csproj", "{22B79A89-2036-4BA0-A681-0CFE1302851E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ECD9E090-E0F3-4106-9CD5-2D62BBFF7643}"
 EndProject
